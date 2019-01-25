@@ -7,7 +7,7 @@ class OrderLinesAddOrchestrator implements OrchestratorInterface
 
     public static function build(array $orderData, $orchestrator) {
 
-        $orchestrator = new OrderAddOrchestrator($orderData, $orchestrator);
+        $orchestrator = new self($orderData, $orchestrator);
 
         return $orchestrator;
     }
@@ -20,19 +20,19 @@ class OrderLinesAddOrchestrator implements OrchestratorInterface
     public function validate(): bool
     {
         $this->orchestratorDecorated->validate();
-        echo 'validation in contact'.PHP_EOL;
+        echo 'validation in order lines'.PHP_EOL;
         return true;
     }
 
     public function execute()
     {
         $this->orchestratorDecorated->execute();
-        echo 'execute in contact'.PHP_EOL;
+        echo 'execute in order lines'.PHP_EOL;
     }
 
     public function notify()
     {
         $this->orchestratorDecorated->notify();
-        echo 'notify in contact'.PHP_EOL;
+        echo 'notify in order lines'.PHP_EOL;
     }
 }

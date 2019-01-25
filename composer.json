@@ -1,0 +1,9 @@
+{
+  "name": "digitickets/pargeter",
+  "description": "DigiTickets Sample decorator system",
+  "autoload": {
+    "psr-4": {
+      "DigiTickets\\Orchestration\\": "Orchestration/"
+    }
+  }
+}

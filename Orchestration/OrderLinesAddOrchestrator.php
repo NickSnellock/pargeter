@@ -1,5 +1,5 @@
 <?php
-namespace DigiTickets\Orchestration;
+namespace NickSnellock\Orchestration;
 
 class OrderLinesAddOrchestrator implements OrchestratorInterface
 {

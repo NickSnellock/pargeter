@@ -1,6 +1,6 @@
 <?php
 
-namespace DigiTickets\Orchestration;
+namespace NickSnellock\Orchestration;
 
 interface OrchestratorInterface
 {
